@@ -18,8 +18,8 @@ export const Header: React.FC = () => {
   //路由处理
   const navigate = useNavigate();
   //redux
-  const language = useSelector((state) => state.language);
-  const languageList = useSelector((state) => state.languageList);
+  const language = useSelector((state) => state.language.language);
+  const languageList = useSelector((state) => state.language.languageList);
   const dispatch = useDispatch();
 
   //国际化
