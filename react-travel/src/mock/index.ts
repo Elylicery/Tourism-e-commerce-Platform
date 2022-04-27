@@ -10,7 +10,7 @@ export const productList = [
       {
         id: 1,
         title:
-          "埃及阿斯旺+卢克索+红海Red Sea+开罗+亚历山大12日跟团游(5钻)·【官方旗舰明星纯玩团】25人封顶|含签证小费全程餐|3晚尼罗河游轮+3晚红海全包度假村+1晚底比斯古都|升级内陆飞机|优质中文导游队伍|七大神庙+赠项目",
+          "埃及阿斯旺+卢克索+红海Red Sea+开罗+亚历山大12日跟团游(5钻)",
         description: "【官方旗舰明星纯玩团】25人封顶|含签证小费全程惨|3晚尼罗河邮轮+3晚红海全包度假村+1晚底比斯孤独|升级内陆飞机|优质中文当有|七大神庙+增项目",
         price: 1199.999,
         originalPrice: 119999.99,
@@ -568,3 +568,40 @@ export const productList = [
   }
 ];
 
+/**
+ * 产品详情数据
+ */
+export const productDetail = {
+  id: 1,
+  title:
+    "埃及阿斯旺+卢克索+红海Red Sea+开罗+亚历山大12日跟团游(5钻)",
+  description: "【官方旗舰明星纯玩团】25人封顶|含签证小费全程惨|3晚尼罗河邮轮+3晚红海全包度假村+1晚底比斯孤独|升级内陆飞机|优质中文当有|七大神庙+增项目",
+  price: 1199.999,
+  originalPrice: 119999.99,
+  discountPresent: 0.1,
+  rating: 3.5,
+  travelDays: "EightPlus",
+  tripType: "HotelAndAttractions",
+  departureCity: "Beijing",
+  createTime: "0001-01-01T00:00:00",
+  updateTime: null,
+  departureTime: null,
+  features:"<div><strong><span style=\"font-size:24px;color:#cc0000;text-align:center;display: block;margin: 0 auto;margin-bottom: 15px;\">【2020升级款：埃及阿斯旺+卢克索+红海Red Sea+开罗+亚历山大12日跟团游(5钻)】</span></strong><strong><span style=\"font-size:24px;color:#cc0000;text-align:center;display:block;margin: 0 auto;margin-bottom: 15px;\">【25人封顶3晚尼罗河邮轮+3晚红海全包度假村+1晚底比斯孤独】</span></strong><span style=\"font-size:16px;text-align:center;display:block;margin: 0 auto;margin-bottom: 35px;\">*连续好评多年连续好评多年 | 连续好评多年 |连续好评多年连续好评多年~</span><div style=\"display: block;margin: 0 auto;padding-left: 50px;line-height: 28px;\"><span><span style=\"color:#cc0000\">☆【特别升级】</span>25人封顶|含签证小费全程惨|3晚尼罗河邮轮+3晚红海全包度假村+1晚底比斯孤独|升级内陆飞机|优质中文当有|七大神庙+增项目</span><br><strong><span style=\"color:#cc0000\">重磅升级重磅 游山玩水花样不断</span></strong><br><span><span style=\"color:#cc0000\">☆【特别升级】</span>25人封顶|含签证小费全程惨|3晚尼罗河邮轮+3晚红海全包度假村+1晚底比斯孤独</span><br><span><span style=\"color:#cc0000\">☆【特别升级】</span>埃及阿斯旺+卢克索+红海Red Sea+开罗+亚历山大12日跟团游(5钻)</span><br><span><span style=\"color:#cc0000\">☆【特别升级】</span>埃及阿斯旺+卢克索+红海Red Sea+开罗+亚历山大12日跟团游(5钻)</span><br><span><span style=\"color:#cc0000\">☆【特别升级】</span>埃及阿斯旺+卢克索+红海Red Sea+开罗+亚历山大12日跟团游(5钻)</span><br><span><span style=\"color:#cc0000\">☆【特别升级】</span>埃及阿斯旺+卢克索+红海Red Sea+开罗+亚历山大12日跟团游(5钻)</span><br><strong><span style=\"color:#cc0000\">重磅升级重磅 游山玩水花样不断</span></strong><br><span><span style=\"color:#cc0000\">☆【特别升级】</span>25人封顶|含签证小费全程惨|3晚尼罗河邮轮+3晚红海全包度假村+1晚底比斯孤独</span><span><span style=\"color:#cc0000\">☆【特别升级】</span>埃及阿斯旺+卢克索+红海Red Sea+开罗+亚历山大12日跟团游(5钻)</span><br><span><span style=\"color:#cc0000\">☆【特别升级】</span>埃及阿斯旺+卢克索+红海Red Sea+开罗+亚历山大12日跟团游(5钻)</span><br><span><span style=\"color:#cc0000\">☆【特别升级】</span>埃及阿斯旺+卢克索+红海Red Sea+开罗+亚历山大12日跟团游(5钻)</span><br><span><span style=\"color:#cc0000\">☆【特别升级】</span>埃及阿斯旺+卢克索+红海Red Sea+开罗+亚历山大12日跟团游(5钻)</span><br></div></div>",
+  fees:"<div><span style=\"text-align:center;display: block;margin: 0 auto;\">☆这里是费用</span></div>",
+  notes:"<div><span style=\"text-align:center;display: block;margin: 0 auto;\">☆这里是预定须知</span></div>",
+  touristRoutePictures: [
+    {
+      url: "https://images.unsplash.com/photo-1650892431435-a30b8f36b6f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1650909085203-9205d767fd3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1650888975725-5754f80362f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    },
+  ],
+
+}
