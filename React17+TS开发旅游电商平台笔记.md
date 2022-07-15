@@ -3,7 +3,7 @@
 * 核心技术：Typescript + React 
 * 核心框架：Redux
 * 核心思想：组件化
-* 核心案例：防携程旅游电商购物平台
+* 核心案例：仿携程旅游电商购物平台
   * 软件开发生命周期
   * 测试
   * 容器化部署
@@ -53,10 +53,7 @@ npx create-react-app my-app-ts --template typescript
     "src"
   ]
 }
-
 ```
-
-详细说明：看图
 
 ### **为已存在的项目添加ts支持？**
 
@@ -77,14 +74,14 @@ npx create-react-app my-app-ts --template typescript
 
 ### **React的设计理念**
 
-* *单向数据流*
+* 单向数据流
   * 数据与界面绑定
   * 单向渲染
   * 就好像一个函数，同样的输入，同样的输出
-* *虚拟DOM*
+* 虚拟DOM
   * 类似Docker或VMware的Snapshot快照技术
-  * <img src="React17+TS开发旅游电商平台笔记.assets/image-20211201212616331.png" alt="image-20211201212616331" style="zoom:50%;" />
-* *组件化*
+  * <img src="React17+TS开发旅游电商平台笔记.assets/image-20211201212616331.png" alt="image-20211201212616331" style="zoom: 67%;" />
+* 组件化
   * 保持交互一致性
   * 保持视觉风格的统一
   * 便于程序员互相之间的协作
@@ -152,13 +149,13 @@ export default Robot;
 
 ### 配置React的CSS Module
 
-![image-20211208211802655](React17+TS开发旅游电商平台笔记.assets/image-20211208211802655.png)
+<img src="React17+TS开发旅游电商平台笔记.assets/image-20211208211802655.png" alt="image-20211208211802655" style="zoom:80%;" />
 
-![image-20211208211925745](React17+TS开发旅游电商平台笔记.assets/image-20211208211925745.png)
+<img src="React17+TS开发旅游电商平台笔记.assets/image-20211208211925745.png" alt="image-20211208211925745" style="zoom:80%;" />
 
 注：直接在.tsx文件中使用`import styles from './App.css'`的方式引入CSS无法成功，因为ts无法试别css文件。所以需要给CSS文件加上类型定义声明。
 
-![image-20211208212025147](React17+TS开发旅游电商平台笔记.assets/image-20211208212025147.png)
+<img src="React17+TS开发旅游电商平台笔记.assets/image-20211208212025147.png" alt="image-20211208212025147" style="zoom:80%;" />
 
 具体做法：在src下创建`custome.d.ts`，加入对CSS文件引用对象化的支持
 
@@ -169,7 +166,7 @@ declare module "*.css"{
 }
 ```
 
-然后ts就可以试别css了
+然后ts就可以识别css了
 
 ```tsx
 import styles from './App.module.css'
@@ -192,7 +189,7 @@ function App(){
 
 **JSS是什么？**
 
-React 对 CSS 封装非常简单，就是沿用了 DOM 的 style 属性对象。CSS-in-JS是一种技术（technique），而不是一个具体的库实现（library）。**简单来说CSS-in-JS就是将应用的CSS样式写在JavaScript文件里面，而不是独立为一些.css，.scss或者less之类的文件，这样你就可以在CSS中使用一些属于JS的诸如模块声明**，变量定义，函数调用和条件判断等语言特性来提供灵活的可扩展的样式定义。
+React 对 CSS 封装非常简单，就是沿用了 DOM 的 style 属性对象。CSS-in-JS是一种技术（technique），而不是一个具体的库实现（library）。**简单来说CSS-in-JS就是将应用的CSS样式写在JavaScript文件里面，而不是独立为一些.css，.scss或者less之类的文件，这样你就可以在CSS中使用一些属于JS的诸如模块声明，变量定义，函数调用和条件判断等语言特性来提供灵活的可扩展的样式定义。****
 
 **JSS 的常见实现**
 
@@ -205,7 +202,7 @@ React 对 CSS 封装非常简单，就是沿用了 DOM 的 style 属性对象。
 
 好处：
 
-1. 局部央视
+1. 局部样式
 2. 避免无用的css样式堆积
 3. 封装的更好的组件库
 
@@ -223,9 +220,9 @@ React 对 CSS 封装非常简单，就是沿用了 DOM 的 style 属性对象。
 npm install typescript-plugin-css-modules --save-dev
 ```
 
-注：只在开发时使用，所以安装在dev中 
+【注】：只在开发时使用，所以安装在dev中 
 
-package.json中如图所示：
+安装后package.json中如图所示：
 
 ![image-20211208212903187](React17+TS开发旅游电商平台笔记.assets/image-20211208212903187.png)
 
@@ -258,19 +255,24 @@ package.json中如图所示：
 
 ![image-20211208215026441](React17+TS开发旅游电商平台笔记.assets/image-20211208215026441.png)
 
-### 创建class类组件
+  ### setState的异步开发
 
+<font color=yellow>setState() 异步更新，同步执行：</font>setState()本身并非异步，但对state的处理机制给人一种异步的假象，state处理一般发生在生命周期变化的时候。
 
+  ### React组件的生命周期
 
-  ##：*3-10 【延伸阅读】React的行内样式与CSS
-  ##：*3-11 【概念理解】State vs Props (05:56)
-  ##：*3-12 【事件驱动】React Event 事件处理 (12:32)
-  ##：*3-13 【异步处理】获取网络API数据 (09:54)
-  ##：*3-14 【异步处理】setState的异步开发 (06:01)
-  ##：*3-15 【死与新生】探索React组件的生命周期 (06:50)
-  ##：*3-16 【概念理解】React 17 版本变化 (05:24)
+<img src="React17+TS开发旅游电商平台笔记.assets/image-20220715172829602.png" alt="image-20220715172829602" style="zoom:80%;" />
 
-  - *作业：*3-17 【讨论题】什么是 React？
+  ### React 17 版本变化
+
+**breaking changes**
+
+* 事件委托机制改变
+* 向原生浏览器靠拢
+* 删除事件池
+* useEffect清理操作改为异步操作
+* JSX不可反悔undefined
+* 删除部分私有API
 
 # 第4章 【基础篇】React Hooks11 节 | 83分钟
 
@@ -288,6 +290,7 @@ package.json中如图所示：
   ##：*4-8 【全局数据传递】组件化Context Provider (13:09)
   ##：*4-9 【高阶组件HOC】withAddToCart() (11:24)
   ##：*4-10 【自定义Hook】useAddToCart() (06:31)
+
   - *作业：*4-11 【讨论题】React Hooks 深度分析
 
 # 第5章 【实战项目】项目搭建与首页开发 **试看**9 节 | 69分钟
